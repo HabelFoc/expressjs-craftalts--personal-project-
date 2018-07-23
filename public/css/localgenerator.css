@@ -1,0 +1,35 @@
+.chosengenerator-topcontainer{
+	padding-top: 10vh;
+	padding-bottom: 45vh;
+}
+
+.generator-box{
+	padding: 2rem;
+}
+
+.top-generator-lists .card .card-image{
+	width: 100%;
+}
+
+.subtitle{
+	padding: 0.22rem;
+}
+
+.card-image{
+	height: 160px;
+}
+
+.card-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.card{
+	padding: 10px;
+	cursor: pointer;
+}
+
+.card-title{
+	text-shadow: 0 0 3px #111;
+	font-weight: 600;
+}

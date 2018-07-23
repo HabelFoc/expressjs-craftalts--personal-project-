@@ -1,0 +1,51 @@
+.top-content{
+	padding-top: 10vh;
+	padding-bottom: 45vh;
+}
+
+@media(max-width: 460px){
+	.top-content h1{
+		font-size: 3rem;
+	}
+}
+
+.upload-box{
+	background: #fff;
+	padding: 1rem;
+}
+
+.alt-list-textarea{
+	box-sizing: border-box;
+	width: 100%;
+	height: 50vh;
+	overflow: auto;
+	border: 1px solid #ccc;
+	resize: none;
+	white-space: wrap;
+}
+
+.alt-info-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.alt-list-textarea{
+	padding: 0.4rem;
+	appearance: none;
+	outline: none;
+}
+
+.progress{
+	position: relative;
+	bottom: 0;
+}
+
+.success-msg{
+	display: none;
+	transition: 0.5s ease;
+}
+
+.success-msg.active{
+	display: block;
+}

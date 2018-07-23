@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 3px;
+	outline: none;
+	appearance: none;
+}
+
+* a{
+	text-decoration: none;
+}
+
+html,body{
+	height: 100%;
+}
+
+.img-bg{
+	z-index: -1000;
+	position: fixed;
+	background-attachment: fixed;
+	background: url('../assets/mc_bg/bg1.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.img-bg .inner{
+	position: relative;
+	background: #6BBDDD;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0.33;
+}
+
+.container-fluid.main-content{
+	padding-top: 10vh;
+	padding-bottom: 45vh;
+}
+
+.container.title h2{
+	margin:0;
+}
+
+.row.box-1{
+	background:#fff;
+	opacity: 1;
+	padding: 4rem;
+	margin: 4rem;
+	margin-top: 0;
+}
+
+.card-image{
+	background: #ccc;
+}
+
+.card-image img{
+	background: #fff;
+	width: 100%;
+	opacity: 1 !important;
+}
+
+.row.box-1 .inner{
+	display: flex;
+	flex-direction: column;
+}
+
+.box-1-content{
+	display: flex;
+	flex-direction: row;
+}
+
+@media(max-width: 560px){
+	.box-1-content{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.footer-copyright{
+	position: relative;
+	margin-top: 4rem;
+	left: 0;
+	right: 0;
+	padding: : 3rem;
+	color: #fff;
+}
+
+.footer-copyright h6{
+	margin: 0;
+}
+
+.footer-copyright{
+	background: rgba(0,0,0,0.6);
+}
+
+.footer-copyright .container{
+	padding: 2.5rem;
+}
+
+.topnavbar{
+	position: fixed;
+	z-index: 500;
+	top: 0;
+}
+
+.topnavbar *{
+	outline: none;
+	appearance:none;
+}
+
+.progress{
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+}
+
+.container.inner *{
+	opacity: 1 !important;
+}
+
+.boxes{
+	padding: 2rem;
+	padding-top: 0.5rem;
+	color: #fff;
+}
+
+.boxes .row{
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@media(max-width: 670px){
+	.boxes .row{
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.box{
+	border: 1px solid #fff;
+	cursor: pointer;
+	text-shadow: 0 0 1px #111;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.1);
+	transition: 0.3s ease;
+}
+
+.box *{
+	color: #fff;
+}
+
+.box:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.logout-btn,
+.login-btn,
+.register-btn{
+	font-weight: 570;
+}
+
+.avatar{
+	padding:0.33rem;
+}
+
+.avatar a{
+	padding: 0;
+}
+
+.avatar a:hover{
+	background: 0;
+}
+
+
+.profile-avatar{
+	width: 57px;
+	height: 54px;
+}
+
+.displayName{
+	font-weight: bold;
+}

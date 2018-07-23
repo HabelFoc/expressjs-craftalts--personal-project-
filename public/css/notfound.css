@@ -1,0 +1,15 @@
+.notfound-topcontiner{
+	padding-top: 10vh;
+	padding-bottom: 45vh;
+}
+
+.notfound-img-bg{
+	z-index: -2000;
+	position: fixed;
+	background-attachment: fixed;
+	background: url('../assets/mc_bg/thumb-1920-429644.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}

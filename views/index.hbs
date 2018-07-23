@@ -1,0 +1,35 @@
+{{> topnavbar }}
+
+{{!-- Main Content --}}
+<div class="container-fluid main-content">
+
+	<div class="container title">
+		<div class="row">
+			<div class="col s12 center">
+				<h1>{{ title }}</h1>
+				<p class="flow-text">{{ msg }}</p>
+			</div>
+		</div>
+	</div>
+	
+	{{!-- box services --}}
+	<div class="boxes">
+			<div class="row center">
+				<div class="col m1"></div>
+				<div class="col s12 m3 box box1 z-depth-2">
+					<h4><a href="/upload">Upload</a></h4>
+				</div>
+				<div class="col s12 m3 box box2 z-depth-2">
+					<h4><a href="/generate">Generate</a></h4>
+				</div>
+				<div class="col s12 m3 box box3 z-depth-2">
+					<h4><a href="/checker">Checker</a></h4>
+				</div>
+				<div class="col m1"></div>
+			</div>
+		</div>
+
+</div>
+
+
+{{> footer }}

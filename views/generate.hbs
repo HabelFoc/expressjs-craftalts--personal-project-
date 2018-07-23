@@ -1,0 +1,37 @@
+{{> topnavbar }}
+
+
+<div class="container generate-topcontainer">
+	<div class="row">
+		<div class="title center">
+			<h2>Generate</h2>
+			<p class="flow-text white darken-1 z-depth-1">Choice Your Method</p>
+		</div>
+	</div>
+
+
+	{{!-- main content --}}
+	<div class="row">
+		<div class="generator-methods center">
+			<div class="col s6">
+				<div class="public-generate orange white-text text-darken-3 hoverable generator">
+					<a href="/generate/globalgenerator">
+						<h3>Global</h3>
+						<p class="generate-meth-desc">Generate from random generator</p>
+					</a>
+				</div>
+			</div>
+			<div class="col s6">
+				<div class="chosen-generate teal white-text text-darken-3 hoverable generator">
+					<a href="/generate/localgenerator">
+						<h3>Local</h3>
+						<p class="generate-meth-desc">Generate from specific generator</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{{> footer }}

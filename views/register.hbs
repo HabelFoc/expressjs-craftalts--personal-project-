@@ -1,0 +1,93 @@
+{{> topnavbar }}
+
+<div class="container register-topcontainer">
+	
+	{{!-- title --}}
+	<div class="row">
+		<div class="title-container">
+			<h2 class="center">{{ title }}</h2>
+		</div>
+	</div>
+
+	<div class="row form-container">
+		<form action="/register/startregister" id="registerform" method="POST" class="col s12 form-box z-depth-2">
+			{{!-- error/quick message here --}}
+			{{#if registerMsg }}
+			<div class="row center">
+				<p class="orange-text">{{ registerMsg }}</p>
+			</div>
+			{{/if}}
+			{{#if registerErrors }}
+			<div class="row center">
+				{{#each registerErrors.errors }}
+					<p class="red-text">{{ this.msg }}</p>
+				{{/each}}
+			</div>
+			{{/if}}
+			<div class="row">
+				<div class="input-group">
+					<div class="input-field col s12 m6">
+						<i class="material-icons prefix">account_circle</i>
+						<label for="user_username">Username</label>
+						<input type="text" name="username" id="user_username">
+					</div>
+					<div class="input-field col s12 m6">
+						<i class="material-icons prefix">email</i>
+						<label for="user_email">Email</label>
+						<input type="email" name="email" id="user_email">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-group">
+					<div class="input-field col s12 m6">
+						<i class="material-icons prefix">lock</i>
+						<label for="user_pwd">Password</label>
+						<input type="password" name="pwd" id="user_pwd">
+					</div>
+					<div class="input-field col s12 m6">
+						<i class="material-icons prefix">lock</i>
+						<label for="user_confirm_pwd">Confirm password</label>
+						<input type="password" name="confirm_pwd" id="user_confirm_pwd">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s5 m5"></div>
+				<div class="avatar-preview col s2 m2">
+					<img src="https://crafatar.com/avatars/8667ba71b85a4004af54457a9734eed7" id="preview_avatar" alt="avatar-preview">
+				</div>
+				<div class="col s5 m5"></div>
+			</div>
+			<div class="row">
+				<div class="input-group">
+					<div class="file-field input-field col s12">
+						<div class="btn-small teal darken-1 waves-effect waves-light">
+							<span>Upload Avatar</span>
+							<input type="file" name="avatar" id="user_avatar">
+						</div>
+						<div class="file-path-wrapper">
+							<input readonly="readonly" class="file-path validate" name="avatar_url" id="avatarurl" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="fileLimitMsg center" id="fileLimitMsg">
+					<p class="flow-text red-text">File To Large <small><span>*max-size:1MB</span></small></p>
+				</div>
+			</div>
+			<div class="row button-container">
+				<div class="col m3 l3"></div>
+				<div class="col s12 m6 l6 button-box">
+					<button id="submitbtn" class="btn-large teal darken-1 waves-effect waves-light submit-btn">submit
+						<div class="progress" id="preloader">
+      						<div class="indeterminate"></div>
+  						</div>
+					</button>
+				</div>
+				<div class="col m3 l3"></div>
+			</div>
+		</form>
+	</div>
+</div>
+
+{{> footer }}

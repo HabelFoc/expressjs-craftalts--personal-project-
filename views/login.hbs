@@ -1,0 +1,65 @@
+{{> topnavbar }}
+
+<div class="container login-topcontainer">
+	{{!-- title --}}
+	<div class="row">
+		<div class="title-container">
+			<h2 class="center">{{ title }}</h2>
+		</div>
+	</div>
+
+	{{!-- main content --}}
+	<div class="row">
+		<div class="login-container col s12">
+			<form action="/login/startlogin" method="POST" class="form-box z-depth-2">
+				{{!-- if 'loginMsg'  --}}
+				{{#if loginMsg }}
+				<div class="row">
+					<p class="orange-text center">{{ loginMsg }}</p>
+				</div>
+				{{/if}}
+				{{!-- if 'errors' --}}
+				{{#if loginError }}
+				<div class="row">
+					<div class="errors center">
+						{{#each loginError.errors }}
+							<p class="red-text">{{ this.msg }}</p>
+						{{/each}}
+					</div>
+				</div>
+				{{/if}}
+				<div class="row">
+					<div class="input-group">
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">account_circle</i>
+							<label for="user_email">Email</label>
+							<input type="text" name="email" id="user_email">
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">lock</i>
+							<label for="user_pwd">Password</label>
+							<input type="password" name="pwd" id="user_pwd">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m3"></div>
+					<div class="login-container col s12 m6">
+						<button type="submit" id="loginBtn" class="btn-large teal darken-1 waves-effect waves-light">login
+							<div class="progress" id="preloader">
+      							<div class="indeterminate"></div>
+  							</div>
+						</button>
+					</div>
+					<div class="col m3"></div>
+				</div>
+				<p class="center orange-text">Not member yet?&nbsp;<a class="teal-text" href="/register">Register Here!</a></p>
+			</form>
+		</div>
+	</div>
+	
+</div>
+
+{{> footer}}

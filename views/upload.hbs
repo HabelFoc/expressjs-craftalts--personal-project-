@@ -1,0 +1,46 @@
+{{> topnavbar }}
+
+
+<div class="container top-content center">
+	<div class="row">
+		<h2>{{ msg }}</h2>
+	</div>
+	<div class="row upload-box z-depth-2">
+		<div class="col s12 m8">
+			<div class="alt-list-box">
+				<textarea name="altlist" id="altlist" class="alt-list-textarea" spellcheck="false"></textarea>
+			</div>
+		</div>
+		<div class="col s12 m4">
+			<div class="alt-info-box ">
+				<p class="red-text">*upload format: test@test.com:password321
+					<br><button class="btn-flat orange modal-trigger" data-target="formatImgModal">View Example</button>
+				</p>
+				<button class="btn-large teal darken-1 waves-effect waves-light" id="uploadbtn">UPLOAD</button>
+				<button class="btn-large teal darken-1 waves-effect waves-light" id="resetdbbtn">RESET DB</button>
+				<div id="preloader">
+      				<div class="indeterminate"></div>
+  				</div>
+  				<div class="success-msg" id="successmsg">
+  					<p class="flow-text"></p>
+  				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{!-- formatImgModal Structure --}}
+<div id="formatImgModal" class="modal">
+	<div class="modal-content">
+		<div class="card">
+			<div class="card-image">
+				<img src="/assets/alt-list-format.png" alt="format-alt">
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="javascript:Void(0)" class="modal-close waves-effect waves-red btn-flat">Close</a>
+	</div>
+</div>
+
+{{> footer }}

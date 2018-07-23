@@ -1,0 +1,64 @@
+{{!-- background image --}}
+<div class="img-bg"><div class="inner"></div></div>
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="/generate">Generate</a></li>
+  <li><a href="/upload">Upload</a></li>
+  <li><a href="/checker">Checker</a></li>
+  <li class="divider"></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+{{!-- Top Navbar --}}
+<nav class="topnavbar teal">
+    <div class="nav-wrapper container">
+      <a href="/" class="brand-logo">CraftAlts</a>
+      <a data-target="mobile-form" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+        
+        {{#if user }}
+              {{#if userAvatar }}
+                <li class="collection-item avatar">
+                  <a><img src="{{ userAvatar }}" class="profile-avatar circle" alt="profile-avatar"></a>
+                </li>
+              {{else}}
+                <li>
+                <a class="displayName btn-flat teal-text text-darken-4">{{ displayName }}</a>
+              </li>
+              {{/if}}
+            <li><a class="btn-small logout-btn teal darken-2 white-text waves-effect waves-dark" href="/logout">Logout</a></li>
+        {{else}}
+            <li><a class="btn-small teal darken-2 white-text login-btn waves-effect waves-dark " href="/login">Login</a></li>
+            <li><a class="btn-small register-btn teal darken-2 white-text waves-effect waves-dark " href="/register">Register</a></li>
+        {{/if}}
+      </ul>
+      
+    </div>
+</nav>
+
+<!-- Dropdown Structure -->
+<ul id="dropdown2" class="dropdown-content">
+  <li><a href="/generate">Generate</a></li>
+  <li><a href="/upload">Upload</a></li>
+  <li><a href="/checker">Checker</a></li>
+  <li class="divider"></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+{{!-- mobile menu --}}
+<ul class="sidenav" id="mobile-form">
+  <li><a href="/">Home</a></li>
+  <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown2">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+  {{#if user }}
+      <li>
+        <a href="javascript:void(0)">{{ displayName }}</a>
+      </li>
+      <li><a class="btn-small logout-btn teal darken-2 white-text waves-effect waves-dark" href="/logout">Logout</a></li>
+  {{else}}
+      <li><a class="btn-small teal darken-2 white-text login-btn waves-effect waves-dark " href="/login">Login</a></li>
+      <li><a class="btn-small register-btn teal darken-2 white-text waves-effect waves-dark " href="/register">Register</a></li>
+  {{/if}}
+</ul>

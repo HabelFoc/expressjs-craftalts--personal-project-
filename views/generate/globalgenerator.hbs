@@ -1,0 +1,58 @@
+{{> topnavbar }}
+
+
+<div class="container containerTop" id="containerTop">	
+	<div class="row">
+		<h3 class="center">{{ title }}</h3>
+	</div>
+	<div class="row box-1 z-depth-2" id="row-box1">
+		<div class="container inner" id="inner">
+			<span id="errormsg" class="flow-text error-msg red-text"></span>
+			<div class="box-1-content valign-wrapper">
+				<div class="col s12 m3">
+					<div class="card">
+						<div class="card-image">
+							<img id="player-skin" src="https://crafatar.com/avatars/8667ba71b85a4004af54457a9734eed7?size=100" alt="player-skin">
+						</div>
+					</div>
+				</div>
+				<form class="col s12 m6">
+					<div class="input-field">
+						<i class="material-icons prefix">email</i>
+						<label for="email">Email</label>
+						<input type="text" id="email" autocomplete="off" value="test@test.com">
+					</div>
+					<div class="input-field">
+						<i class="material-icons prefix" id="pwdicon">lock-open</i>
+						<label for="password">Password</label>
+						<input type="text" id="password" autocomplete="off" value="password321">
+					</div>
+				</form>
+				<div class="col s12 m3">
+					<div class="card card-player-skin">
+						<div class="card-image">
+							<img id="player-body" src="https://crafatar.com/renders/body/8667ba71b85a4004af54457a9734eed7" alt="player-body">
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn-large waves-effect waves-light disabled teal darken-1" id="generateBtn">GENERATE
+				<div class="progress" id="preloader">
+      				<div class="indeterminate"></div>
+  				</div>
+			</button>
+			<p id="msginfo" class="msg-info">Can't generate? 
+				<span 
+				class="btn-small btn-flat whys orange"
+				data-tooltip="Looks like you have used all your daily qouta (4), wait another 24 hours to restore your qouta :)"
+				>
+					why
+				</span>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+{{> footer }}

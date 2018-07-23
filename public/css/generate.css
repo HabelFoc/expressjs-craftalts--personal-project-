@@ -1,0 +1,19 @@
+.generate-topcontainer{
+	padding-top: 10vh;
+	padding-bottom: 45vh;
+}
+
+.generator{
+	padding: 2rem;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.generate-meth-desc{
+	font-size: 1.1rem;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}

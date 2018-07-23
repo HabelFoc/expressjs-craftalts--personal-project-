@@ -1,0 +1,58 @@
+.containerTop{
+	padding-top: 10vh;
+	padding-bottom: 45vh;
+}
+
+
+.card-player-skin{
+	box-shadow: none !important;
+}
+
+.btn-large{
+	width: 100%;
+}
+
+.progress{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.progress.active{
+	display: block;
+}
+
+.error-msg{
+	display: none;
+	text-align: center;
+}
+
+.tooltipped{
+	display: none; 
+}
+
+.msg-info{
+	display: none;
+	position: relative;
+}
+
+* [data-tooltip]::before{
+	content:attr(data-tooltip);
+	z-index: 2000;
+	position: absolute;
+	display: none;
+	background: rgba(0,0,0,0.88);
+	color: #fff;
+	top: 100%;
+	margin-top: 8px;
+	left: 0;
+	right: 0;
+	text-transform: capitalize;
+	border-radius: 3px;
+	white-space: wrap;
+}
+
+* [data-tooltip]:hover::before{
+	display: block;
+}

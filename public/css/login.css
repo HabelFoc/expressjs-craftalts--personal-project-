@@ -1,0 +1,24 @@
+.login-topcontainer{
+	padding-top: 10vh;
+	padding-bottom: 45vh
+}
+
+.form-box{
+	background: #f4f4f4 !important;
+	padding: 3rem;
+}
+
+.btn-large{
+	width: 100%;
+}
+
+.progress{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.progress.active{
+	display: block;
+}

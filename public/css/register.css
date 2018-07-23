@@ -1,0 +1,45 @@
+.register-topcontainer{
+	padding-top: 10vh;
+	padding-bottom: 45vh;
+}
+
+.form-container{
+	background: #f4f4f4 !important;
+}
+
+.form-box{
+	padding: 3rem !important;
+}
+
+.submit-btn{
+	width: 100%;
+}
+
+.progress{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.progress.active{
+	display: block;
+}
+
+.avatar-preview{
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+img{
+	width: 160px;
+	height: 160px;
+}
+
+.fileLimitMsg{
+	display: none;
+}
